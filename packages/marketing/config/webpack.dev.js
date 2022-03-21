@@ -2,8 +2,8 @@ const { merge } = require("webpack-merge");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const packageJson = require("../package.json");
-
 const commmonConfig = require("./webpack.common");
+
 const devConfig = {
   mode: "development",
   devServer: {
