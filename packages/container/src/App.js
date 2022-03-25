@@ -24,7 +24,6 @@ export default () => {
           </Route>
           <Route path="/" component={MarketingApp} />
         </Switch>
-        <MarketingApp />
       </StylesProvider>
     </BrowserRouter>
   );
