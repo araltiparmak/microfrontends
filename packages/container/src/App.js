@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 import MarketingApp from "./components/MarketingApp";
 import AuthApp from "./components/AuthApp";
+import { Dashboard } from "dashboard/DashboardApp";
 
 const generateClassName = createGenerateClassName({
   productionPrefix: "co",
@@ -18,6 +19,9 @@ export default () => {
           isSignedIn={isSignedIn}
           onSignOut={() => setIsSignedIn(false)}
         />
+
+        <Dashboard isSignedIn={isSignedIn} />
+
         <Switch>
           <Route path="/auth">
             <AuthApp onSignIn={() => setIsSignedIn(true)} />
