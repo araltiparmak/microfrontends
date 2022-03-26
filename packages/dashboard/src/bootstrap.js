@@ -9,6 +9,6 @@ if (process.env.NODE_ENV === "development") {
   }
 }
 
-export const Dashboard = ({ history, isSignedIn }) => {
-  return <App history={history} isSignedIn={isSignedIn} />;
+export const Dashboard = ({ isSignedIn }) => {
+  return <App isSignedIn={isSignedIn} />;
 };
